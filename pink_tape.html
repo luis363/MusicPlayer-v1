@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="site_title">Music</title>
+    <link rel="icon" id="favicon" type="image/png" href="notes.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="Index.js"></script>
+</head>
+<body>
+    <audio id="audio">
+        <source src="" type="audio/mp3">
+    </audio>
+    <div id="media-playback-buttons-bar">
+        <button class="btn" id="previous-btn" onclick="PREVIOUS()"><img id="previous-btn-img" src="Img/Previous.png" ></button>
+        <button class="btn" id="play-btn" onclick="PLAY()" ><img id="play-btn-img" src="Img/Play.png" ></button>
+        <button class="btn" id="next-btn" onclick="NEXT()"><img id="next-btn-img" src="Img/Next.png"></button>
+        <button class="btn" id="jump-back-btn" onclick="jump_back()"><img id="back-btn-img" src="Img/Back.png" ></button>
+        <button class="btn" id="jump-forward-btn" onclick="jump_forward()"><img id="forward-btn-img" src="Img/Forward.png"></button>
+        <button class="btn" id="shufle-btn" onclick="randomize()"><img id="shuffle-btn-img" src="Img/Shuffle.png"></button>
+        <p id="current_time">0:00</p>
+        <img src="Img/Music Cover.png" id="Music_Cover">
+    </div>
+    
+    <a href="index.html"><button class="play2_btn">Home🏡</button></a>
+    <p id="song_tittle">Untitled</p>
+    
+    <div class="background-container">
+        <!--<video src="Pink Tape Official Trailer.mp4" autoplay loop muted></video>-->
+    </div>
+    
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+.btn {
+    height: 50px;
+    width: 100px;
+
+}
+
+#shufle {
+    height: 50px;
+    width: 100px;
+}
+
+#changeSongName {
+    height: 50px;
+    width: 100px;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  #video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #content {
+    position: relative;
+    z-index: 1;
+    /* Add other styles for your content */
+  }#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  #video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #content {
+    position: relative;
+    z-index: 1;
+    /* Add other styles for your content */
+  }
+
+/*for phone*/
+@media screen and (min-width:320px) and (max-width:640px) {
+    /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+    @media (prefers-color-scheme: dark) {
+       /*Dark mode styles go here */
+      body {
+        /* to make small line on the bottom dissapear */
+        background-color: black;
+      }
+    } 
+
+    .background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+    
+    .background-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://i.imgur.com/2hm6N2Z.mp4');
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.8; /* Optional: adjust the opacity of the GIF */
+    }
+
+    .gym3-background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .gym3-background-container::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://i.imgur.com/t4WqTCc_lq.mp4');
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.8; /* Optional: adjust the opacity of the GIF */
+    }
+  
+      #content {
+        position: relative;
+        z-index: 1;
+        /* Add other styles for your content */
+      }
+
+      .btn {
+        height: 50px;
+        width: 100px;
+        margin: 5px;
+        opacity: 100%;
+        background-color: rgb(240, 255, 255, 0);
+        border: 2px solid rgb(121, 121, 121, 0);
+    }
+
+    #play-btn-img {
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 50%;
+      max-height: 40%;
+    }
+
+    #previous-btn-img {
+      position: absolute;
+      top: 20%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      max-width: 20%;
+      max-height: 15%;
+    }
+
+    #shuffle-btn-img {
+      position: absolute;
+      top: 20%;
+      left: 90%;
+      transform: translate(-50%, -50%);
+      max-width: 20%;
+      max-height: 15%;
+    }
+    
+    #next-btn-img {
+      position: absolute;
+      top: 20%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      max-width: 20%;
+      max-height: 15%;
+    }
+
+    #back-btn-img {
+      position: absolute;
+      top: 60%;
+      left: 30%;
+      transform: translate(-50%, -50%);
+      max-width: 20%;
+      max-height: 20%;
+    }
+
+    #forward-btn-img {
+      position: absolute;
+      top: 60%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+      max-width: 20%;
+      max-height: 20%;
+    }
+
+    #Music_Cover {
+      position: absolute;
+      top: 20%;
+      left: 2%;
+    }
+
+    #current_time {
+      position: absolute;
+      top: 45%;
+      left: 43%;
+    }
+
+      #media-playback-buttons-bar {
+        width: 100%;
+        height: 141px;
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      p {
+        color: azure;
+      }
+
+      #Music_Cover {
+        width: 20%;
+        height: auto;
+      }
+
+      #Music_Cover:hover {
+        width: 22%;
+        height: auto;
+      }
+}
